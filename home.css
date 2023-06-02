@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root{
+    --side-purple:#851D41;
+    --yellow:#FFBA08;
+    --footer:#a39f9f;
+    --white:white;
+}
+/* Header Section */
+.nav{
+    height: 60px;
+    display: flex;
+    width: 1350px;
+}
+
+.space{
+    height: 30px;
+    display: flex;
+    width: 1350px;
+}
+.nav-left,.space-left{
+    background-color: white;
+    width: 960px;
+    display: flex;
+}
+
+.nav-right,.space-right{
+    background-color: #851D41;
+    width: 400px;
+    display: flex;
+}
+
+.logo, .social{
+    margin-left: 30px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin-left: 80px;
+}
+
+ul li a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.home{
+    color: var(--yellow) 
+}
+
+.log-in button{
+    background-color: var(--yellow);
+    border-radius: 5px;
+    border: none;
+    margin-left: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    list-style: none;
+}
+
+.social i{
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 22px;
+}
+
+ul li a:hover,.social i:hover,.name-title p:hover{
+    color: var(--yellow)
+}
+
+/* Hero Section */
+.container{
+    height: 80vh;
+    width: 1350px;
+    display: flex;
+}
+
+.side-white{
+    background-color: var(--white);
+    width: 960px;
+    height: 78vh;
+    margin-left: 30px;
+}
+
+.side-white p{
+    line-height: 48px;
+    font-size: 35px;
+}
+
+.food{
+    letter-spacing: 5px;
+    font-size: 40px;
+ }
+ 
+.make-an-order{
+    background-color: var(--yellow);
+    border-radius: 5px;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.make-an-order:hover,.log-in button:hover{
+background-color: #f3da9b;
+}
+.side-purple{
+    background-color: var(--side-purple);
+    width: 413px;
+    height: 78vh;
+}
+
+.side-white img{
+  margin-left: 750px;
+  position: absolute;
+  top: 5px;
+}
+
+/* ABOUT US SECTION */
+.About,.Menu,.Reviews{
+    width: 1350px;
+    height: 30px;
+    display: flex;
+}
+.contain,.contain1,.boxes1,.boxes2,.name,.navigate,.previous,.next{
+    display: flex;  
+}
+.con-a{
+    width: 275px;
+    height: 60vh;
+}
+.con-b{
+    width: 1075px;
+    height: 50vh;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+.con-d{
+    margin-left: 180px;
+    margin-top: -100px;
+}
+.con-b p,.con-c p{
+    font-size: 25px;
+    align-items: center;
+}
+.container1 h2,.container1 img,.con-c,.container2 h3,.container3 h3{
+    margin-left: 30px;
+}
+
+.container1 hr,.container2 hr,.container3 hr{
+    height: 5px;
+    width: 70%;
+    background-color: var(--yellow);
+    margin-left: 25px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+/* MENU SECTION  */
+.box1{
+    background-color: var(--side-purple);
+    border-radius: 10px;
+    height: 55vh;
+    width: 250px;
+}
+
+.box2{
+    background-color: var(--yellow);
+    border-radius: 10px;
+    height: 55vh;
+    width: 250px;
+    margin-left: 60px;
+}
+
+.box3{
+    background-color: var(--side-purple);
+    border-radius: 10px;
+    height: 55vh;
+    width: 250px;
+    margin-left: 60px;
+}
+
+.boxes1,.boxes2{
+    margin-left: 300px;
+}
+
+.box1 h4,.box3 h4{
+    color: var(--white);
+    text-align: center;
+}
+.box2 h4{
+    color: black;
+    text-align: center;
+}
+
+.box-native{
+    border-radius: 10px;
+    margin-left: 40px;
+    border: 2px solid var(--yellow);
+    height: 32vh;
+    width: 175px;
+}
+
+.boxes2 > .box3 img{
+    margin-left: 30px;
+}
+.box-native img{
+    margin-left: 5px; 
+    margin-top: 5px;
+}
+
+.box-western{
+    border-radius: 10px;
+    margin-left: 40px;
+    border: 2px solid var(--side-purple);
+    height: 30vh;
+    width: 175px;
+}
+
+.shop-now{
+    border: 2px var(--white) solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
+    color: white;
+    padding: 10px 8px;
+}
+
+.shop-now1{
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
+    color: white;
+    padding: 10px 8px;
+}
+
+
+/* REVIEW SECTION */
+.review-box{
+    height: 58vh;
+    width: 450px;
+    background-color: var(--side-purple);
+    margin-left: 450px;
+}
+
+.rate{
+    display: flex;
+    list-style: none;
+}
+
+.rate i{
+    text-decoration: none;
+    margin-left: 5px;
+    color: var(--yellow);
+    font-size: 12px;
+}
+
+.rating,.review-box p,.name,.navigate{
+    margin-left: 35px;
+}
+.review-box p{
+    color: var(--white);
+    font-size: 8px;
+    line-height: 25px;
+    margin-right: 45px;
+}
+
+.name-img img{
+    border-radius: 50%;
+}
+.name-title p{
+    color: rgb(4, 15, 63);
+    margin-left: 15px;
+}
+
+
+.previous i, .previous b{
+ color: var(--white);
+ font-size: 12px;
+}
+.previous{
+    cursor: pointer;
+}
+.previous b:hover{
+    color: var(--yellow);
+}
+.next{
+    margin-left: 210px;
+    cursor: pointer;
+}
+.next b:hover{
+    color: var(--white);
+}
+.next i, .next b{
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.slide img{
+    margin-left: 185px;
+}
+
+/* FOOTER SECTION */
+.footer{
+    height: 85vh;
+    width: 1350px;
+    background: linear-gradient(25deg, #d1cbcb, rgb(247, 255, 222));
+}
+
+.subscribe,.footer-menu{
+    display: flex;
+    
+}
+
+.subscribe1{
+    width: 575px;
+    height: 20vh;
+    margin-left: 35px;
+}
+
+.subscribe1 h3, p{
+    line-height: 35px;
+}
+
+.subscribe2{
+    width: 575px;
+    height: 10vh;
+    margin-left: 65px;
+}
+input{
+    height: 40px;
+    width: 30vw;
+    border: 2px solid var(--side-purple);
+}
+
+input::placeholder{
+padding-left: 15px;
+}
+
+#subscribe{
+    background-color: var(--side-purple);
+    border: none;
+    color: var(--white);
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.footer-hr{
+    width: 80%;
+    background-color: var(--footer);
+    margin-left: 25px;
+}
+
+.div1{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.div1 img{
+    margin-top: 10px;
+}
+
+.div2{
+    margin-left: 120px;
+    line-height: 40px;
+}
+
+.div2 ul li a{
+    margin-left: 0px;
+}
+
+.contact ul{
+    list-style: none;
+    text-decoration:none;
+    color: var(--footer);
+    line-height: 35px;
+}
+
+.links li{
+    list-style: none;
+    text-decoration: none;
+}
+.links > li > a,.copyright p{
+    color: var(--footer);
+}
+.div3{
+    margin-left: 215px;
+}
