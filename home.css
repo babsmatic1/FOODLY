@@ -18,7 +18,9 @@
     display: flex;
     width: 1350px;
 }
-
+.hamburger{
+    display: none;
+}
 .space{
     height: 30px;
     display: flex;
@@ -396,4 +398,23 @@ padding-left: 15px;
 }
 .div3{
     margin-left: 215px;
+}
+/* STARTING MEDIA RESPONSIVE */
+
+@media screen and (max-width:390px) {
+    .menu{
+        display: none;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    
+
+    .hamburger{
+        color: white;
+        margin-left: 190px;
+        cursor: pointer;
+        background: url(img/bg-tablet-pattern.svg);
+        display: block;
+    }  
 }

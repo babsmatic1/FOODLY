@@ -76,6 +76,7 @@ ul li a{
     color: var(--side-purple);
     cursor: pointer;
     font-size: 22px;
+    font-family: "Poppins",sans-serif;
 }
 
 ul li a:hover,.social i:hover,.name-title p:hover{
@@ -118,7 +119,6 @@ ul li a:hover,.social i:hover,.name-title p:hover{
 }
 
 .menus{
-    border: 3px solid coral;
     height: 235vh;
 }
 

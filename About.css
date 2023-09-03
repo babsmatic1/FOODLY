@@ -18,7 +18,9 @@
     display: flex;
     width: 1350px;
 }
-
+.hamburger{
+    display: none;
+}
 .space{
     height: 30px;
     display: flex;
@@ -118,8 +120,12 @@ ul li a:hover,.social i:hover,.name-title p:hover{
 }
 .side-right{
     width: 650px;
-    margin-left: 175px;
+    margin-left: 145px;
     margin-top: 20px;
+}
+
+.side-right-1{
+    display: none;
 }
 .welcome{
 font-size: 45px;
@@ -143,7 +149,6 @@ font-weight: 700;
 .why-choose-us h3,.why-choose-us p{
     text-align: center;
 }
-
 
 .box1{
     border: 2px solid var(--side-purple) ;
@@ -297,4 +302,85 @@ padding-left: 15px;
 }
 .div3{
     margin-left: 215px;
+}
+
+
+/* STARTING MEDIA QUERIES */
+
+@media screen and (max-width:390px) {
+    .menu,.break-right,.nav-right,.side-right{
+        display: none;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    
+    .hamburger{
+        color: var(--side-purple);
+        margin-left: 180px;
+        cursor: pointer;
+        background: url(img/bg-tablet-pattern.svg);
+        display: block;
+    }
+
+    /* Hero for About Us */
+    .hero{
+        border: solid var(--white);
+        height: 40vh;
+        width: 450px;
+        background-image: url(img/Rectangle\ 36.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .african{
+        height: 62vh;
+        width: 450px;
+        display: block;
+        grid-template-columns: auto;
+    }
+
+    .welcome{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .side-left{
+        margin-left: -30px;
+    }
+    .side-right-1{
+        display: block;
+    }
+
+    .side-right-1{
+        width: 650px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    .side-right-1 h4,.why-choose-us p{
+        color: var(--side-purple);
+    }
+    .side-right-1 hr{
+    background-color: var(--side-purple);
+    width: 15%;
+    border-radius: 5px;
+    margin-left: -5px;
+    height: 5px;
+    margin-top: 19px;
+}
+.why-choose-us{
+    height: 479vh;
+    width: 1350px;
+}
+.why-choose-us > h3,.why-choose-us > p{
+    margin-left: -270px;
+}
+
+.boxes1{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 65px;
+}
+.box1,.box2{
+    margin-bottom: 50px;
+}
 }
